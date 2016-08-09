@@ -13,7 +13,7 @@ midpoint = (upperbound + lowerbound) / 2.0
 
 while abs(upperbound - lowerbound) > 0.0001:
     midpoint = (upperbound + lowerbound) / 2.0
-    minpay = midpoint 
+    minpay = midpoint
     print 'L', lowerbound
     print 'U', upperbound
     print 'M', minpay
