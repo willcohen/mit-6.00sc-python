@@ -14,9 +14,6 @@ midpoint = (upperbound + lowerbound) / 2.0
 while abs(upperbound - lowerbound) > 0.0001:
     midpoint = (upperbound + lowerbound) / 2.0
     minpay = midpoint
-    print 'L', lowerbound
-    print 'U', upperbound
-    print 'M', minpay
     updatedbalance = outstanding
     for x in range(0, 12):
         x += 1
@@ -25,7 +22,6 @@ while abs(upperbound - lowerbound) > 0.0001:
         # if updatedbalance < 0:
         # break
     balance = updatedbalance
-    print balance
     if balance > 0:
         lowerbound = midpoint
     if balance < 0:
