@@ -19,8 +19,6 @@ while abs(upperbound - lowerbound) > 0.0001:
         x += 1
         monthlyinterest = interestrate/12.0
         updatedbalance = updatedbalance * (1 + monthlyinterest) - minpay
-        # if updatedbalance < 0:
-        # break
     balance = updatedbalance
     if balance > 0:
         lowerbound = midpoint
